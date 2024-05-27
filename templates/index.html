@@ -2,24 +2,32 @@
 <html>
 
 <head>
+    <link rel = "stylesheet" href = "{{ url_for('static', filename = 'style.css') }}">
     <title>Home Page</title>
 </head>
 <body>
-<!-- Introduction about me -->
-    <h1>Hi Everyone, My name is Stephen Tran</h1>
-    <h2>About me</h2>
-    <p>I am a developer who learn in class ..., this is the project where I create my own holidays planner</p>
-    
-    
-    <!-- Introduction about the project -->
-    <h2>About the project</h2>
-    <p>...</p>
+    <section>
+        <h3 class = "heading">Project Content</h3>
+    </section>
+    <section>
+        <!-- Introduction about me -->
+        <h1 class = "index_page">Hi Everyone, My name is Stephen Tran</h1>
+        <h2 class = "index_page">About me</h2>
+        <p class = "index_page">I am a programmer, mainly developing backend, Machine Learning Model, DeepLearning Model, Data Analyze. This is a project that I make to help me expain my field.</p>
+        
+        
+        <!-- Introduction about the project -->
+        <h2 class = "index_page">About the Project</h2>
+        <p class = "index_page">This project is mainly about getting a schedule for traveler who are new to Vietnam or people who don't know where to head for some fun.</p>
 
-    <!-- button to move to the next step -->
-    <p>Click the button below to input the information: </p>
-    <button>Next</button>
 
-
+        <!-- button to move to the next step -->
+        <p class = "index_page">Click the button below to input the information about your idea for your trip:</p>
+        <a  href = "{{url_for('input_page')}}" class = "button-link" >Next Page</a>
+    </section>
+    <section>
+        <h3 class = "footer">Footer</h3>
+    </section>
 </body>
 
 

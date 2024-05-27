@@ -1,0 +1,44 @@
+.button-link{
+    background-color: turquoise;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: aliceblue;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+.button-link:hover{
+    background-color: aqua;
+}
+
+
+.index_page{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+body {
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    background-color: bisque;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    padding: 10vh;
+    text-align: center;
+}
+
+.footer{
+    background-color: bisque;
+    font-size: medium;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    padding: 10vh;
+    text-align: center;
+}
