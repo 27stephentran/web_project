@@ -42,3 +42,16 @@ body {
     padding: 10vh;
     text-align: center;
 }
+
+
+.long-travel-yes, .long-travel-no{
+    display: none;
+}
+
+#l-travel[value = "True"]:checked ~.long-travel-yes{
+    display: block;
+}
+
+#l-travel[value = "False"]:checked ~.long-travel-no{
+    display: block;
+}
