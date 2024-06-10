@@ -4,11 +4,11 @@
         <link rel = "stylesheet" href = "{{ url_for('static', filename = 'style.css') }}">
         <title>Input Page</title>
     </head>
-    <body>
+    <body class = "input_page">
         <h1>This is the input section of the project,</h1>
         <h2>where you are going to input your information</h2>
 
-        <form class = "input-form" method="get">
+        <form class = "input-form" method="post">
             <label for="d-off">Amount of days off:</label>
             <input type ="text" id = "d-off" name = "d-off"><br>
 
@@ -23,7 +23,7 @@
                 <h3>Long Travel Input</h3>
                 <label for = "long-travel-options" id = "long-travel-options">Choose where you want to go: </label>
                 <select id = "long-travel-options" name = long_travel>
-                    <option value = "Option-1">Option 1</option>
+                    <option value = "Nha-trang">Nha Trang</option>
                     <option value = "Option-2">Option 2</option>
                     <option value = "Option-3">Option 3</option>
                 </select><br>
@@ -32,6 +32,14 @@
             
                 <label for = "budget" id = "budget">Your Budget: </label>
                 <input type = "text" id = "budget" name = "budget"><br>
+
+                <label for = "people" id = "people">How many people do you want to take with you: </label>
+                <select id = "people" name = "people">
+                    <option value = "1~2">1~2</option>
+                    <option value = "3~4">3~4</option>
+                    <option value = "5~6">5~6</option>
+                    <option value = "More">More</option>
+                </select><br>
             </div>
 
 
@@ -51,9 +59,18 @@
             
                 <label for = "budget" id = "budget">Your Budget: </label>
                 <input type = "text" id = "budget" name = "budget"><br>
+                <label for = "people" id = "people">How many people do you want to take with you: </label>
+                <select id = "people" name = "people">
+                    <option value = "1~2">1~2</option>
+                    <option value = "3~4">3~4</option>
+                    <option value = "5~6">5~6</option>
+                    <option value = "More">More</option>
+                </select><br>
             </div>
-
+            <button class = "submit">Submit information</button>
         </form>
+        
+        <!-- <button class = "submit">Submit information</button> -->
 
 
     </body>
