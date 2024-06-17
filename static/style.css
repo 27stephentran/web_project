@@ -10,6 +10,7 @@
     border: none;
     cursor: pointer;
 }
+
 .button-link:hover{
     background-color: aqua;
 }
@@ -20,10 +21,17 @@
     text-align: center;
 }
 
-body {
+/* .body {
     justify-content: center;
     align-items: center;
+} */
+
+
+.input_page {
+    display: grid;
+    justify-items: center;
 }
+
 
 .heading{
     background-color: bisque;
