@@ -64,3 +64,11 @@
     display: block;
 }
 
+
+.input-form {
+    outline-style: double;
+    outline-offset: 1cap;
+    outline-width: 1cap;
+    outline-color: aqua;
+}
+
