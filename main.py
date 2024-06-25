@@ -75,27 +75,23 @@ def generate_plan(days_off, long_travel, travel_option, other_interest, budget, 
         for day in place:
             activities.append(place[day])
         
-    html_content += '<table border = "1" color = "red">'
-    for day in range(int(days_off)):
-        html_content += f'''
-        <tr><th colspan= "3"> Day {day+1}</th></tr>
-        '''
+        html_content += '<table border = "1" color = "red">'
+        for day in range(int(days_off)):
+            day_key = f"Day {day + 1:02}"
+            if day_key in place:
+                activities = place[day_key]
+                html_content += f'<tr><th colspan="3">Day {day + 1}</th></tr>'
 
-        parts_of_day = ["Morning", "Afternoon", "Evening"]
-
-        for part in parts_of_day:
-            html_content += f'<tr><td>{part}:</td>'
-
-            try: 
-                activity = activities[0][parts_of_day.index(part)][0]
-                html_content += f'<td colspan = "2">{activity}</td>'
-                
-            except:
+                parts_of_day = ["Morning", "Afternoon", "Evening"]
+                for part, activity in zip(parts_of_day, activities):
+                    html_content += f'<tr><td>{part}:</td>'
+                    activity_detail = activity[0]
+                    html_content += f'<td colspan="2">{activity_detail}</td></tr>'
+            else:
                 break
+        html_content += "</table>"
 
-        html_content += "</tr>"
 
-    html_content += "</table>"
 
     return html_content
 
