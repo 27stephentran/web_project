@@ -21,11 +21,6 @@
     text-align: center;
 }
 
-/* .body {
-    justify-content: center;
-    align-items: center;
-} */
-
 
 .input_page {
     display: grid;
@@ -72,3 +67,20 @@
     outline-color: aqua;
 }
 
+
+
+.recommendations_page {
+    display: grid;
+    justify-items: center;
+    font-family: monospace ;
+    font-size: 20px;
+    background-color: bisque;
+}
+
+.p {
+    display: grid;
+    justify-items: center;
+    color: aqua;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: bisque;
+}
